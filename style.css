@@ -1,0 +1,370 @@
+:root{
+    --cor1: #111317;
+    --cor2: #1f2125;
+    --cor3: #35373b;
+    --cor4: #f9ac54;
+    --cor5: #d79447;
+    --cor6: #d1d5db;
+    --cor7: #ffffff;
+}
+
+body{
+    font-family: 'Poppins';
+    background-color: var(--cor1);
+}
+
+/* NAVBAR */
+
+.logo {
+    max-height: 40px;
+}
+
+.custom-nav{
+    background-color: var(--cor1);
+}
+
+.custom-btn{
+    background-color: var(--cor4);
+    color: white;
+}
+
+.custom-btn:hover {
+    background-color: var(--cor5);
+    color: white;
+  }
+
+.custom-nav-link{
+    color: var(--cor6);
+    font-size: 15px;
+    position: relative;
+    transition: all 0.4s;
+}
+
+.custom-nav-link::after{
+    content: '';
+    color: var(--cor6);
+    height: 2px;
+    width: 50%;
+    background: var(--cor4);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+
+.custom-nav-link:hover::after{
+    color: var(--cor6);
+    opacity: 1;
+}
+
+.custom-nav-link:hover{
+    color: var(--cor6);
+}
+
+/* HOME */
+
+section#home h1{
+    color: var(--cor7);
+    font-size: 70px;
+    font-weight: bold;
+}
+
+section#home .img-header{
+    max-height: 400px;
+}
+
+section#home .custom-text-1{
+    font-weight: 600;
+    color: var(--cor4);
+    text-align: justify;
+    position: relative;
+    z-index: 2;
+}
+
+section#home .custom-text-2{
+    color: var(--cor7);
+    font-size: 14px;
+    text-align: justify
+}
+
+section#home .make{
+    color: #1f2125;
+    -webkit-text-stroke: 1px var(--cor7);
+}
+
+section#home .custom-text-container{
+    position: relative;
+    display: inline-block;
+}
+
+.highlight-circle {
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    width: 200px;
+    height: 200px;
+    background-color: var(--cor5);
+    border-radius: 50%;
+    filter: blur(60px);
+    z-index: 1;
+}
+
+
+
+/* PROGRAM */
+
+section#program .custom-card img{
+    border-radius: 20%;
+    max-height: 40px;
+}
+
+section#program .custom-card{
+    background-color: var(--cor3);
+    border-radius: 10%;
+}
+
+section#program .custom-card:hover{
+    border-color: var(--cor4);
+    border-width: 1.5px;
+}
+
+section#program .custom-card h3{
+    color: var(--cor7);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+section#program .custom-card p{
+    color: var(--cor6);
+    font-size: 11px;
+    font-weight: lighter;
+}
+
+section#program .custom-card a{
+    color: var(--cor7);
+    font-size: 14px;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+section#program .custom-btn-arrow{
+    max-height: 40px;
+}
+
+section#program .custom-btn-arrow:hover{
+    color: var(--cor4);
+}
+
+section#program h2{
+    color: var(--cor7);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* CLASSES */
+
+section#classes h2{
+    color: var(--cor7);
+    font-size: 32px;
+    font-weight: 500;
+}
+
+section#classes p{
+    color: var(--cor6);
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+section#classes .class-1 {
+    width: 60%;
+    border-radius: 8px
+}
+
+section#classes .class-2 {
+    width: 40%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* JOIN US */
+
+section#join-us h2{
+    color: var(--cor7);
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+
+section#join-us p{
+    color: var(--cor7);
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+section#join-us .custom-card{
+    background-color: var(--cor3);
+    border-radius: 10px;
+}
+
+section#join-us .custom-card h3{
+    color: var(--cor7);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+section#join-us .custom-card p{
+    color: var(--cor7);
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+section#join-us .custom-card-icon{
+    max-height: 50px;
+    border-radius: 10%;
+}
+
+/* PRICING PLAN */
+
+section#pricing-plan h2{
+    font-size: 30px;
+    text-align: center;
+    color: var(--cor7);
+}
+
+section#pricing-plan p{
+    color: var(--cor6);
+    text-align: center;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+section#pricing-plan h3{
+    font-size: 14px;
+    font-weight: normal;
+    color: var(--cor7);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+section#pricing-plan h4{
+    font-size: 28px;
+    color: var(--cor7);
+    font-weight: 500;
+}
+
+section#pricing-plan .custom-card{
+    background-color: var(--cor3);
+    border-radius: 10%;
+    height: 100%;
+}
+
+section#pricing-plan .custom-card:hover{
+    border-color: var(--cor4);
+    border-width: 1.5px;
+}
+
+section#pricing-plan .custom-card-container{
+    padding: 0px;
+}
+section#pricing-plan .custom-card-header{
+    border: none;
+}
+section#pricing-plan .custom-plan-benefits .custom-single-benefit{
+    border: none;
+    padding: none;
+    background-color: var(--cor3);
+    color: var(--cor7);
+    font-size: 14px;
+}
+
+section#pricing-plan .custom-btn{
+    background-color: var(--cor3);
+    border-color: var(--cor4);
+    color: var(--cor4);
+    max-width: 250px;
+}
+
+section#pricing-plan .custom-btn:hover{
+    background-color: var(--cor4);
+    border-color: var(--cor4);
+    color: var(--cor7);
+    max-width: 250px;
+}
+
+section#pricing-plan .custom-card-icon{
+    max-height: 20px;
+}
+
+/* MEMBER REVIEW */
+
+section#member-review{
+    background-color: var(--cor3);
+}
+
+section#member-review .custom-member-pfp{
+    border-radius: 100%;
+    max-height: 50px;
+}
+
+section#member-review h3{
+    font-size: 18px;
+    color: var(--cor7);
+}
+
+section#member-review h4{
+    font-size: 16px;
+    color: var(--cor7);
+}
+
+section#member-review h5{
+    font-size: 14px;
+    color: var(--cor6);
+    font-weight: lighter;
+}
+section#member-review p{
+    font-size: 14px;
+    color: var(--cor7);
+    text-align: justify;
+}
+
+section#member-review .custom-icon{
+    max-height: 20px;
+}
+
+section#member-review .custom-member-details{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+section#member-review .custom-quotation-mark-col{
+    height: 100%;
+}
+
+section#member-review .custom-navigate{
+    text-decoration: none;
+}
+
+section#member-review .custom-btn-arrow{
+    max-height: 40px;
+}
+
+/* FOOTER */
+
+#footer p{
+    color: var(--cor6)
+}
+
+#footer h5{
+    color: var(--cor7);
+}
+
+#footer .nav-link{
+    color: var(--cor6)
+}
+
+#footer .custom-icon{
+    max-height: 40px;
+}
